@@ -18,4 +18,9 @@ print("doubles: ", doubles)
 
 #squaring numbers
 squares = [(lambda x: x**2)(x) for x in range(1,20)]
-print(squares)
+print("Squares: ", squares)
+
+#check for primes
+isPrime = lambda num: num> 1 and all(num % i !=0 for i in range(2, int(num**0.5)+1))
+print(isPrime(13))
+print(isPrime(20))
